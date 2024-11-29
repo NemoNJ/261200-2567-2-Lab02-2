@@ -35,7 +35,7 @@ class Book{
     public void displayDetails() {
         System.out.println("Title   : " + title);
         System.out.println("Author  : " + author);
-        System.out.println("Price   : " + price);
+        System.out.println("Price   : " + price + "\n");
         // TODO: Complete the rest of this method.
     }
     public void updatePrice(double newPrice) {
@@ -47,10 +47,10 @@ class Book{
              this.price = this.price*(1-discount/100.00);
              System.out.println("This discount percentage applied");
              System.out.println("Discount is " + discount + " %");
-             System.out.println("Updated price is "+ this.price);
+             System.out.println("Updated price is "+ this.price+"\n");
          }else{
              System.out.println("Error this discount is invalid");
-             System.out.println("Price is "+this.price+" so it not update!");
+             System.out.println("Price is "+this.price+" so it not update!\n");
          }
 
     }
